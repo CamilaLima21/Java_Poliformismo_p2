@@ -1,3 +1,4 @@
+package modelo;
 
 public class ContaCorrente extends Conta implements Tributavel {
 
@@ -6,9 +7,9 @@ public class ContaCorrente extends Conta implements Tributavel {
 	}
 	
 	@Override
-	public boolean saca(double valor) {
+	public void saca(double valor) throws SacaException{
 		double valorSacar = valor + 0.2;
-		return super.saca(valorSacar);
+		super.saca(valorSacar);
 	}
 
 	@Override
@@ -19,5 +20,10 @@ public class ContaCorrente extends Conta implements Tributavel {
 	@Override
 	public double getValorImposto() {
 		return super.saldo * 0.01;
+	}
+	
+	@Override
+	public String toString() {
+		return "ContaCorrente - Número: " + super.getNumero();
 	}
 }

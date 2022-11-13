@@ -1,5 +1,10 @@
+package modelo;
 
-
+/**
+ * Classe que representa um cliente no Bytebank.
+ * @author camila.lima
+ *
+ */
 public class Cliente {
 
     private String nome;

@@ -1,7 +1,13 @@
+package teste;
+
+import modelo.ContaCorrente;
+import modelo.ContaPoupanca;
+import modelo.SacaException;
+
 
 public class TesteContas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SacaException{
 		
 		ContaCorrente cc1 = new ContaCorrente(111, 111);
 		cc1.deposita(100.0);
