@@ -1,6 +1,7 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import modelo.Conta;
 import modelo.ContaCorrente;
@@ -10,9 +11,7 @@ public class TesteArrayList {
 	public static void main(String[] args) {
 
 		// Generics
-		ArrayList<Conta> lista = new ArrayList<Conta>();
-
-		ArrayList<String> nomes = new ArrayList<String>();
+		List<Conta> lista = new ArrayList<Conta>();
 
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
